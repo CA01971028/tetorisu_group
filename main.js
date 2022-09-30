@@ -9,6 +9,7 @@ const cvs = document.getElementById('cvs');
 const ctx = cvs.getContext('2d');
 //キャンバスサイズ
 const canvasW = blockSize * boardCol;
+const canvasH = blockSize * boardRow;
 cvs.width = canvasW;
 cvs.height = canvasH;
 //コンテナの設定
