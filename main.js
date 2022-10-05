@@ -190,9 +190,6 @@
      case 65: //左
        if (canMove(-1, 0)) offsetX--;
        break;
-     case 87: //上
-       if (canMove(0, -1)) offsetY--;
-       break;
      case 68: //右
        if (canMove(1, 0)) offsetX++;
        break;
