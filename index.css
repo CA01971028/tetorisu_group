@@ -1,4 +1,21 @@
 body {
     text-align: right;
   }
-
+button {
+  width: 10em;
+  height:3em;
+  margin:auto
+}
+  h4 {
+    margin: 20px 0;
+	font-size: 3vw;
+	text-align:center;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 90deg, #4169e1 0, #90CAF9 100% );
+	-webkit-background-clip: text;
+  }
+h6,h5 {
+  text-align:left;
+  font-size:15px
+}
