@@ -109,7 +109,7 @@ let isGameOver =false;
 //描画処理
 const draw = () => {
   //塗りに黒を設定
-  ctx.fillStyle = '#000';
+  ctx.fillStyle = '#008';
   //キャンバスを塗りつぶす
   ctx.fillRect(0, 0, canvasW, canvasH);
 
@@ -211,6 +211,7 @@ document.onkeydown = (e) => {
       if (canMove(0, 0, newTet)) {
         tet = newTet;
       }
+      break;
     case 49://ブロックの形を変更
     tetTypes = [
       [], //0を空としておく
@@ -421,7 +422,6 @@ const initStartPos = () => {
   offsetX = boardCol / 2 - tetSize / 2;
   offsetY = 0;
 };
-
 //テトリミノのindexを抽選
 const randomIdx = () => {
   return Math.floor(Math.random() * (tetTypes.length - 1)) + 1;
@@ -449,9 +449,5 @@ const init = () => {
 
   draw();
 // 要素
-const music = new Audio('musics/music.mp3');
-const play = document.getElementById('play');
-const volumeUp = document.getElementById('volume-up');
-const volumeDown = document.getElementById('volume-down');
-const mute = document.getElementById('mute');
+
 };
