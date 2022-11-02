@@ -448,6 +448,4 @@ const init = () => {
   timerId=setInterval(dropTet,speed);
 
   draw();
-// 要素
-
 };
