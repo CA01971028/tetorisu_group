@@ -413,6 +413,7 @@ const dropTet = () => {
     if (!canMove(0, 0)) {
       isGameOver = true;
       clearInterval(timerId);
+      
     }
   }
   draw();
