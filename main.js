@@ -132,12 +132,16 @@ const draw = () => {
   }
   if (isGameOver) {
     const s = 'GAME OVER';
+    const q = score;
     ctx.font = "40px 'MS ゴシック'";
     const w = ctx.measureText(s).width;
     const x = canvasW / 2 - w / 2;
     const y = canvasH / 2 - 20;
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'ff00ff';
+    ctx.fillText(q,x,80)
     ctx.fillText(s, x, y);
+    
+    
   }
 };
 //ブロック一つを描画する
