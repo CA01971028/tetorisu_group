@@ -121,7 +121,6 @@ const draw = () => {
       }
     }
   }
-
   //テトリミノの描画
   for (let y = 0; y < tetSize; y++) {
     for (let x = 0; x < tetSize; x++) {
@@ -132,12 +131,12 @@ const draw = () => {
   }
   if (isGameOver) {
     const s = 'GAME OVER';
-    ctx.font = "40px 'MS ゴシック'";
+    ctx.font = "50px 'MingLiU'";
     const w = ctx.measureText(s).width;
     const x = canvasW / 2 - w / 2;
     const y = canvasH / 2 - 20;
-    ctx.fillStyle = 'white';
-    ctx.fillText(s, x, y);
+    ctx.fillStyle = '#ff00ff';
+    ctx.fillText(s, x, y,800);
   }
 };
 //ブロック一つを描画する
