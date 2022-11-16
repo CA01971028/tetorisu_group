@@ -15,7 +15,18 @@
   <link rel="stylesheet" href="index.css">
   <body onload="init()">
     <h4 id="scrore">score:0</h4>
-    <button id="start">スタート</button>
+    <table>
+      <tr>
+        <th><button id="start">スタート</button></th>
+        <th>キー操作一覧:   </th>
+        <th>A:左に移動</h6></th>
+        <th>D:右に移動</th>
+        <th>S:下に移動</th>
+        <th>L:ブロックの回転</th>
+      </tr>
+    </table>
+    
+    
     <div id="container">
       <canvas id="cvs"></canvas>
     </div>
@@ -23,11 +34,6 @@
       <audio controls loop>
         <source src="musics/music2.mp3" type="audio/mp3">
       </audio>
-      <h5>キー操作一覧</h5>
-      <h6>A:左に移動</h6>
-      <h6>D:右に移動</h6>
-      <h6>S:下に移動</h6>
-      <h6>L:ブロックの回転</h6>
       <div>
   </div>
     <script src="main.js"></script>
