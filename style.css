@@ -1,0 +1,10 @@
+.score{
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.score:hover{
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+.start:hover{
+    background-color:chartreuse;
+}
